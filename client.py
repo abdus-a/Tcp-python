@@ -7,6 +7,10 @@ clientsocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 host = socket.gethostname()
 
 port = 444
+def diffeihelmen_keyPublicMake_for_b(p,g):
+    b = random.randint(1,95)
+    B = g**b%p
+    return B
 
 clientsocket.connect(('192.168.1.104', port)) #You can substitue the host with the server IP
 
