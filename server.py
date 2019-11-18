@@ -10,6 +10,9 @@ p = prime_numburs[randome_for_p
 def diffeihelmen_keyPublicMake_for_a(p, g):
     a = random.randint(1,96)
     A = g**a%p
+    return A
+
+
     
 host = socket.gethostname() #Host is the server IP
 port = 444 #Port to listen on 
